@@ -1,0 +1,103 @@
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.clock {
+    font-size: 24px;
+    margin: 10px;
+}
+
+#theme-toggle {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+#contact-form input {
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+#form-feedback {
+    margin-top: 10px;
+}
+
+.search-container {
+    margin: 20px;
+}
+
+#search-input {
+    padding: 5px;
+}
+
+#search-results {
+    list-style: none;
+    padding: 0;
+}
+
+.tabs {
+    margin: 20px;
+}
+
+.tab-button {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+}
